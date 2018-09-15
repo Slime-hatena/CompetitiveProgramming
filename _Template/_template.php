@@ -5,8 +5,10 @@ class In {
     private $count = 0;
 
     function __construct()	{
-		$str = trim(fgets(STDIN));
-        $this->array = explode(' ', $str);
+        while (!feof(STDIN)) {
+            $str = trim(fgets(STDIN));
+            $this->array = array_merge($this->array, explode(' ', $str));
+        }
         $this->length = count($this->array);
     }
     
