@@ -39,6 +39,21 @@
                 "reveal": "always"
             },
             "problemMatcher": []
+        },{
+            "label": "Run Python",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${file}"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
         }
     ]
 }
